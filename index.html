@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script>
+			function TabClick(evt,id) 
+			{
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++)
+			  {
+				tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++)
+			  {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(id).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+			document.getElementById("1").click();
+		</script>
+		<style>
+			.tab {
+			  float: left;
+			  border: 1px solid #ccc;
+			  border-top:none;
+			  border-bottom:none;
+			  background-color: white;
+			  width: 70px;
+			  height: 2126px;
+			}
+
+			
+			.tab button {
+			  display: block;
+			  background-color: inherit;
+			  color: black;
+			  padding: 15px 15px;
+			  padding-right:0px;
+			  width: 100%;
+			  border: none;
+			  outline: none;
+			  text-align: left;
+			  cursor: pointer;
+			  transition: 0.3s;
+			  font-size: 17px;
+			}
+
+		
+			.tab button:hover {
+			  background-color: #ddd;
+			}
+
+		
+			.tabcontent {
+			  float: left;
+			  padding: 0px 12px;
+			  border: 1px solid #ccc;
+			  width: 70%;
+			  border-left: none;
+			  height: 300px;
+			}
+
+			.highlightgrid:hover
+			{
+				background-color:rgb(249,249,249);
+			}
+			.bell
+			{
+				font-size:36px;
+				color:rgb(150,150,150);
+				cursor:pointer;
+			}
+			.bell:hover
+			{
+				color:black;
+			}
+			input[type=button]
+			{
+				font-size:22px;
+				border-radius:10px;
+				border: 1px solid black;
+				background-color: transparent;
+				color: black;
+				padding: 8px 32px;
+				font-size: 16px;
+				font-weight:500;
+				cursor: pointer;
+				border-color: rgb(71,191,183);
+				color: rgb(71,191,183);
+			}
+			input[type=button]:hover
+			{
+				border: 1px solid black;
+				background-color:rgb(71,191,183);
+				color: rgb(249,251,251);
+				border-color: rgb(71,191,183);
+			}
+			.highlightgrid:hover .childimghov
+			{
+				background-image:none;
+				background-color:rgb(71,191,183);	
+			}
+			.childimghov
+			{
+				background-image:url('img.png');
+				width:60px;
+				height:60px;
+				border-radius:30px;
+			}
+			.highlightgrid:hover .childhov
+			{
+				color:rgb(71,191,183);
+			}
+			.fa
+			{
+				color:gray;
+			}
+			.social:hover
+			{
+				cursor:pointer;
+				color:blue;
+			}
+			.active .hicol{
+				background-color:rgb(71,191,183);
+			}
+			.active .hitxt{
+				color:rgb(71,191,183);
+			}
+		</style>
+	</head>
+	<body>
+		<article class="tab">
+			<br><br><br><br><br>
+			<button class="tablinks active" onclick="TabClick(event,'1')" id="1">
+				<table style="width:100%;height:100%">
+					<tr style="width:100%">
+						<td class="hitxt fa fa-home" style="font-size:33px;width:93%;height:100%"></td>
+						<td class="hicol" style="width:7%;height:100%;"></td>
+					</tr>
+				</table>
+			</button>
+			<button class="tablinks" onclick="TabClick(event,'2')" id="2">
+				<table style="width:100%;height:100%">
+					<tr style="width:100%">
+						<td class="hitxt fa fa-search" style="font-size:33px;width:93%;height:100%">
+							<i class=""></i>
+						</td>
+						<td class="hicol" style="width:7%;height:100%;"></td>
+					</tr>
+				</table>
+			</button>
+			<button class="tablinks" onclick="TabClick(event,'3')" id="3">
+				<table style="width:100%;height:100%">
+					<tr style="width:100%">
+						<td class="hitxt fa fa-download" style="font-size:33px;width:93%;height:100%"></td>
+						<td class="hicol" style="width:7%;height:100%;"></td>
+					</tr>
+				</table>
+			</button>
+		</article>
+		<article>
+			<nav class="navbar navbar-expand-sm bg-white navbar-inverse" style="padding:20px;padding-left:50px;padding-right:50px;">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li class="nav-item">
+							<img src="https://lh5.googleusercontent.com/hRdxEy7UUWpUNsTecAS45QMF9YeQKlQf7v6L0fiNpULz7iOFuR5l70uFWXAxSWvRpSTarBOFnfjem_nYxRX3gG55PylQrux5Pf6bplKCIBWtvPOFSnD9xqlKivLUIl0_uBlh2Zsq" style="height:30px;" />
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav-item" >
+							<span val="70" class="fa fa-bell bell" style="width:100px">
+								<i val="50" class="badge numnoti" style="font-size:16px;font-weight:bold;background-color:red;color:white;position:-20px;margin-left:-20px;margin-top:-15px;" >
+									699
+								</i>
+							</span>
+						</li>
+						<li class="nav-item" style="margin-left:40px;">
+							<div style="cursor:pointer;width:44px;height:44px;background-color:rgb(179,231,127);color:white;border-radius:22px;padding:3px;">
+								<center style="font-size:25px;">AB</center>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div style="width:100%;background-color:rgb(180,180,180);height:1px;"></div>
+			<div style="width:100%;background-color:rgb(200,200,200);height:1px;"></div>
+			<div style="width:100%;background-color:rgb(222,222,222);height:1px;"></div>
+			<div style="width:100%;background-color:rgb(235,235,235);height:1px;"></div>
+			<div style="background-color:rgb(253,253,253);padding:60px;">
+				<h1>&nbsp;&nbsp;&nbsp;Content Store</h1><br>
+				<div style="width=100%;background-color:rgb(249,251,251);margin-left:40px;">
+					<div style="padding:20px;">
+						<span style="font-size:25px;color:rgb(71,191,183);cursor:pointer;">
+							Got bulk orders or almost similar orders ? Fill the order brief in an excel sheet<br>
+						</span>
+						<div style="width:71%;color:gray;text-align:justify;">
+					If you're wondering about an easy way to place orders in large numbers, we provide a customized just for that. Download our excel sheet, and fill the order brief in the prescribed format and submit. In case you need any help, <u>we are just a click away to assist you in placing your order</u>
+						</div><br>	
+						<input type="button" value="Order via Excel Sheet"/>
+						<br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row" style="padding:5px">
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">Blog/Article</span><br>
+										<span style="font-size:19px;">from ₹500</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">Newsletter/E-mailer</span><br>
+										<span style="font-size:19px;">from ₹1000</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">Whitepaper</span><br>
+										<span style="font-size:19px;">from ₹2000</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">e-book</span><br>
+										<span style="font-size:19px;">from ₹1000</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">Report/Guide</span><br>
+										<span style="font-size:19px;">from ₹1000</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">Product Description</span><br>
+										<span style="font-size:19px;">from ₹500</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">Website Content</span><br>
+										<span style="font-size:19px;">from ₹1000</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<div style="color:white;height:30px;"></div>
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">Video Script</span><br>
+										<span style="font-size:19px;">from ₹1000</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<div style="color:white;height:30px;"></div>
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">Company Profile / Brochure</span><br>
+										<span style="font-size:19px;">from ₹2000</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 highlightgrid" style="border-radius:5px;">
+						<div style="background-color:white;border-radius:5px;margin:15px 15px;padding:20px;">
+							<table>
+								<tr>
+									<th>
+										<div class="childimghov" ></div>
+									</th>
+									<td style="padding:20px">
+										<span class="childhov" style="font-size:21px;font-weight:500;">Press Release</span><br>
+										<span style="font-size:19px;">from ₹2000</span>
+									</td>
+								</tr>
+							</table>
+							<div style="text-align:justify;">
+								<span style="color:gray;">
+									Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users.
+								</span>
+								<div>
+									<br>
+									<input type="button" value="Order" style="border:2px solid;padding-left:40px;padding-right:40px;padding-top:7px;padding-bottom:7px;" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer style="background-color:rgb(254,254,254);color:gray;">
+				<center>
+					<br><br>
+					<table style="font-size:50px;">
+						<tr>
+							<td style="padding:30px;">
+							<i href="#" class="fa fa-twitter social"></i>
+							</td>
+							<td style="padding:30px;">
+							<i href="#" class="fa fa-linkedin social"></i>
+							</td>
+							<td style="padding:30px;">
+							<i href="#" class="fa fa-instagram social"></i>
+							</td>
+							<td style="padding:30px;">
+							<i href="#" class="fa fa-facebook  social"></i>
+							</td>
+						</tr>
+					</table>
+					Copyright @ White Panda Media Pvt. Ltd.<br>
+					All rights reserved<br><br>
+					<a href="#">Privacy Policy</a> | <a href="#">Terms Of Service</a> | <a href="#">Service Agreement</a> | <a href="#">Contact Us</a>
+					<br><br>
+				</center>
+			</footer>
+		</article>
+	</body>
+</html>
